@@ -9,7 +9,7 @@ import camp.nextstep.edu.missionutils.test.NsTest;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
-class ApplicationTest extends NsTest {
+public class ApplicationTest extends NsTest {
 
     private static final String ERROR_MESSAGE = "[ERROR]";
 
@@ -52,11 +52,11 @@ class ApplicationTest extends NsTest {
         Application.main(new String[]{});
     }
 
-    static class TestNumberGenerator implements BridgeNumberGenerator {
+    public static class TestNumberGenerator implements BridgeNumberGenerator {
 
         private final List<Integer> numbers;
 
-        TestNumberGenerator(List<Integer> numbers) {
+        public TestNumberGenerator(List<Integer> numbers) {
             this.numbers = numbers;
         }
 
